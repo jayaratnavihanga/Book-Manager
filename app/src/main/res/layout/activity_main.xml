@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <!-- ImageView as background with centerCrop to fill the entire space -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/books"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Title for the Library Management System -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LibraryManager"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Buttons centered vertically in a vertical layout -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/openBookListButton"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="View Book List"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clearDatabaseButton"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Clear Database"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addBookButton"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add Book"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/returnBooksButton"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Return Books"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMockDataButton"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add Books to Database"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
